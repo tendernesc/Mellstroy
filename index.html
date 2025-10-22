@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mellstroy.Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="loader">
+        <div class="loader-content">
+            <div class="logo">
+                <span class="logo-letter">M</span>
+                <span class="logo-letter">E</span>
+                <span class="logo-letter">L</span>
+                <span class="logo-letter">L</span>
+                <span class="logo-letter">S</span>
+                <span class="logo-letter">T</span>
+                <span class="logo-letter">R</span>
+                <span class="logo-letter">O</span>
+                <span class="logo-letter">Y</span>
+                <span class="logo-dot">.</span>
+                <span class="logo-letter">G</span>
+                <span class="logo-letter">A</span>
+                <span class="logo-letter">M</span>
+                <span class="logo-letter">E</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">Загрузка...</div>
+        </div>
+    </div>
+
+    
+    <div id="game-container" style="display: none;">
+        <h1>Собери слово: MELLSTROY.GAME</h1>
+        
+        <div class="game-info">
+            <div id="score">Собрано: <span id="current-word">_ _ _ _ _ _ _ _ _ _ _ _ _ _</span></div>
+            <div id="lives">Жизни: ❤❤❤</div>
+            <div id="level">Уровень: 1</div>
+        </div>
+
+        <div id="game-area">
+          <img id="player" src="Mellnoback.png" alt="Player">
+      </div>
+
+        <div class="controls">
+            <p>← → или A/D для плавного движения</p>
+            <button id="start-btn">Начать игру</button>
+            <button id="pause-btn" style="display:none;">Пауза</button>
+            <!-- <button id="music-btn">🔇</button> -->
+        </div>
+    </div>
+
+    <video id="win-video" style="display: none;">
+      <source src="win-video.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+  </video>
+  
+  <video id="lose-video" style="display: none;">
+      <source src="lose-video.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+  </video>
+
+    <audio id="background-music" loop>
+      <source src="background-music.mp3" type="audio/mpeg">
+      <source src="background-music.ogg" type="audio/ogg">
+      Ваш браузер не поддерживает аудио элементы.
+  </audio>
+
+  <video id="final-win-video" preload="auto" style="display: none;">
+    <source src="final-win-video.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+</video>
+
+<video id="win-second-video" preload="auto" style="display: none;">
+    <source src="win-second-video.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+</video>
+
+    <script src="script.js"></script>
+</body>
+</html>
